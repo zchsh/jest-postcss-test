@@ -1,10 +1,11 @@
 import React from "react";
 
-import "./style.css";
+// import "./style.css";
+import "./style-manually-transpiled.css";
 
 function TestComponent(props) {
-  const { text } = props;
-  return <div className="g-test-component">{text}</div>;
+  const { text, className } = props;
+  return <div className={`g-test-component ${className}`}>{text}</div>;
 }
 
 export default TestComponent;

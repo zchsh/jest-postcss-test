@@ -20,4 +20,24 @@ describe("<TestComponent />", () => {
     const computedStyle = getComputedStyle(rootElem);
     expect(computedStyle.border).toBe("1px solid red");
   });
+
+  it("should render additional classNames", () => {
+    const testText = "I should have a special classname";
+    const customClass = "with-blue-border";
+    const { getByText } = render(
+      <TestComponent className={customClass} text={testText} />
+    );
+    const rootElem = getByText(testText);
+    expect(rootElem.classList.contains(customClass)).toBe(true);
+  });
+
+  it("should use nested CSS processed with PostCSS", () => {
+    const testText = "I should have a blue border";
+    const { getByText } = render(
+      <TestComponent className="with-blue-border" text={testText} />
+    );
+    const rootElem = getByText(testText);
+    const computedStyle = getComputedStyle(rootElem);
+    expect(computedStyle.border).toBe("1px solid blue");
+  });
 });

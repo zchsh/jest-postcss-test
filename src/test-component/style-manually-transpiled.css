@@ -1,0 +1,7 @@
+.g-test-component {
+  border: 1px solid red;
+}
+
+.g-test-component.with-blue-border {
+  border: 1px solid blue;
+}
