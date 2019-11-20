@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/zchsh/jest-postcss-test#readme",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@testing-library/react": "^9.3.2",
+    "jest": "^24.9.0",
+    "react": "^16.12.0"
+  },
+  "dependencies": {
+    "react-dom": "^16.12.0"
   }
 }
