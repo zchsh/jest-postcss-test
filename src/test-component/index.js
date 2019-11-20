@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./style.css";
-// import "./style-manually-transpiled.css";
+// import "./style.css";
+import "./style-manually-transpiled.css";
 
 function TestComponent(props) {
   const { text, className } = props;

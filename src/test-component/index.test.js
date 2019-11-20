@@ -38,6 +38,7 @@ describe("<TestComponent />", () => {
     );
     const rootElem = getByText(testText);
     const computedStyle = getComputedStyle(rootElem);
+    console.log(document.documentElement.outerHTML);
     expect(computedStyle.border).toBe("1px solid blue");
   });
 });
