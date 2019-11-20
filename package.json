@@ -1,0 +1,23 @@
+{
+  "name": "jest-postcss-test",
+  "version": "1.0.0",
+  "description": "Trying to create a basic use of PostCSS with `jest-transform-css` for troubleshooting purposes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zchsh/jest-postcss-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zchsh/jest-postcss-test/issues"
+  },
+  "homepage": "https://github.com/zchsh/jest-postcss-test#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
